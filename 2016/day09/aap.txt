@@ -1,0 +1,18 @@
+do_split: s = (25x3)(3x3)ABC(2x3)XY(5x2)PQRSTX(18x9)(3x2)TWO(5x7)SEVEN
+
+first: (25x3)(3x3)ABC(2x3)XY(5x2)PQRST
+         3 * (3x3)ABC(2x3)XY(5x2)PQRST
+
+         3 * [(3x3)ABC (2x3)XY (5x2)PQRST + X]
+
+         3 * [9 + 6 + 10]
+
+         3*25 = 75
+
+first: (18x9)(3x2)TWO(5x7)SEVEN
+
+          9 * [ (3x2)TWO (5x7)SEVEN ]
+          9 * [   6 + 35 ]
+          9 * 41
+
+        75 + 369 = 444
