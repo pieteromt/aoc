@@ -81,7 +81,7 @@ def show_regs(regs):
     print("ip: " + str(ip) + ", a: " + str(a) + ", b: " + str(b) + ", f: " + str(f) + ", i: " + str(i) + ", p: " + str(p))
 
 # returns True if the instructed was executed succesfully
-def execute(instr, regs, r_queue, s_queue):
+def execute(instr, regs, s_queue, r_queue):
     result = True
     #show_regs(regs)
     if instr[0] == "add":
