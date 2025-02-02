@@ -80,14 +80,14 @@ def process(begin, steps, states):
     for i in range(steps):
         state = states[cur]
         val = turing[pos]
-        mwc = state.wmc[val]
-        #print("cur: " + cur + ", pos: " + str(pos) + ", val: " + str(val) + ", mwc = " + str(mwc))
-        turing[pos] = mwc[0]
-        if mwc[1] == "left":
+        wmc = state.wmc[val]
+        #print("cur: " + cur + ", pos: " + str(pos) + ", val: " + str(val) + ", wmc = " + str(wmc))
+        turing[pos] = wmc[0]
+        if wmc[1] == "left":
             pos -= 1
         else:
             pos += 1
-        cur = mwc[2]
+        cur = wmc[2]
         #show_turing(turing,6)
     calc_checksum(turing)
 
